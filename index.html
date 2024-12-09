@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="delirio" content="Sitio web oficial de Delirio, con biografía, contacto, shows, galería y más." />
+    <title>Delirio Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Delius&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="general">
+      <div class="fondo">
+        <img src="./imagenes/delirioweb.png" alt="Logo de delirio" />
+      </div>
+
+      <div class="abajo">
+        <h1><a href="#biografiacontenedor">Biografía</a></h1>
+        <h1><a href="#contactocontenedor">Contacto</a></h1>
+        <h1><a href="#showscontenedor">Shows</a></h1>
+        <h1><a href="#galeriacontenedor">Galería</a></h1>
+        <h1><a href="#letrascontenedorcarpetas">Letras</a></h1>
+        <h1><a href="#suscribirsecontenedor">Suscribirse</a></h1>
+        <h1><a href="#discoscontenedor">Discos</a></h1>
+        <h1><a href="#videoscontenedor">Videos</a></h1>
+        <h1><a href="#storecontenedor">Store</a></h1>
+      </div>
+
+      <div id="biografiacontenedor">
+        <div id="biografiatexto">
+          <h2>Biografía</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit egestas
+            habitasse, dapibus vel congue gravida feugiat nam porta senectus
+            cubilia, convallis consequat at inceptos vestibulum tristique
+            fringilla libero. Est tortor senectus metus non fames imperdiet
+            sagittis aenean hendrerit ultricies molestie litora, ullamcorper
+            nunc dui egestas per tristique porta auctor vivamus mollis quisque.
+            Sagittis molestie sed aptent torquent velit suspendisse urna platea
+            ante tincidunt gravida, pellentesque enim litora mi pretium quam hac
+            condimentum scelerisque lobortis, augue mattis mauris senectus
+            vehicula praesent nunc ligula nisl inceptos.
+          </p>
+        </div>
+      </div>
+
+      <div id="contactocontenedor">
+        <div id="contactotexto">
+          <h2>Contacto</h2>
+          <form action="tu_script.php" method="post">
+            <input
+              type="text"
+              placeholder="Tu nombre"
+              required
+              aria-label="Nombre"
+            />
+            <input
+              type="email"
+              placeholder="Tu email"
+              required
+              aria-label="Email"
+            />
+            <textarea
+              placeholder="Tu mensaje"
+              required
+              aria-label="Mensaje"
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="letrascontenedorcarpetas">
+        <div id="letrastextocarpetas">
+          <h2>Letras</h2>
+          <div class="botones-carpeta">
+            <button
+              class="boton-carpeta1"
+              onclick="toggleCarpeta('carpeta1');"
+              aria-expanded="false"
+            >
+              Cancion 1
+            </button>
+            <button
+              class="boton-carpeta2"
+              onclick="toggleCarpeta('carpeta2');"
+              aria-expanded="false"
+            >
+              Cancion 2
+            </button>
+          </div>
+        </div>
+
+        <div id="carpeta1" class="carpeta visible">
+          <div class="imagenes">
+            <div class="imagen-container">
+              <p>
+                Ultricies mattis quam sodales sociosqu nibh libero nunc aptent
+                risus pulvinar, feugiat penatibus a nam cum pretium vestibulum
+                ad magnis, in duis dictumst nisl faucibus montes metus felis
+                praesent. Aliquam nullam libero hendrerit accumsan lobortis
+                risus pretium arcu faucibus suspendisse, vivamus eu nascetur
+                aliquet convallis class massa facilisi odio viverra, eros sociis
+                himenaeos maecenas primis semper aenean mollis urna. Consequat
+                praesent gravida risus torquent mauris pretium tellus eget nam
+                ridiculus sociosqu senectus cursus maecenas, nunc venenatis ante
+                vitae litora sapien conubia quis libero velit dapibus class
+                molestie.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="carpeta2" class="carpeta">
+          <div class="imagenes">
+            <div class="imagen-container">
+              <p>
+                Mi netus pretium porttitor imperdiet semper inceptos, eget
+                venenatis ad hac metus, diam magnis litora accumsan vehicula.
+                Facilisis volutpat mauris orci tellus mattis arcu fusce, cursus
+                fermentum iaculis massa duis ornare auctor vehicula, erat nullam
+                augue nascetur ridiculus aptent. Inceptos ante consequat platea
+                tortor venenatis dis arcu, cras quisque justo dapibus vivamus
+                non a aliquam, enim semper id sociis ridiculus nec.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="showscontenedor">
+        <div id="showstexto">
+          <h2>Shows</h2>
+          <div class="shows-container">
+            <div class="show-item">
+              <p><strong>Fecha:</strong> 10/1/2024</p>
+              <p><strong>Lugar:</strong> Auditorio Principal</p>
+              <p><strong>Hora:</strong> 20:00</p>
+              <button onclick="window.location.href='https://redtickets.uy/'">
+                Compra tus tickets aquí
+              </button>
+            </div>
+            <div class="show-item">
+              <p><strong>Fecha:</strong> 15/1/2024</p>
+              <p><strong>Lugar:</strong> Teatro Municipal</p>
+              <p><strong>Hora:</strong> 21:00</p>
+              <button onclick="window.location.href='https://redtickets.uy/'">
+                Compra tus tickets aquí
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="discoscontenedor">
+        <div id="discostexto">
+          <h2>Discos</h2>
+          <div class="imagenes">
+            <div class="imagen-container">
+              <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
+                <img src="./imagenes/ppipi.jpg" alt="portada del Disco 1" />
+                <div class="overlay">Escuchar Disco 1</div>
+              </a>
+            </div>
+            <div class="imagen-container">
+              <a href="https://youtu.be/HMUDVMiITOU?t=18" target="_blank">
+                <img src="./imagenes/alaska.jpg" alt="Portada del Disco 2" />
+                <div class="overlay">Escuchar Disco 2</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="galeriacontenedor">
+      <div id="galeriatexto">
+        <h2>Galería</h2>
+        <div class="botones-carpeta">
+          <button class="boton-carpeta" onclick="toggleCarpeta('carpeta1')">
+            Mostrar Carpeta 1
+          </button>
+          <button class="boton-carpeta" onclick="toggleCarpeta('carpeta2')">
+            Mostrar Carpeta 2
+          </button>
+        </div>
+  
+        <div id="carpeta1" class="carpeta visible">
+          <div class="imagenes">
+            <div class="imagen-container">
+              <img src="./imagenes/dark.jpeg" alt="dos chicos" />
+            </div>
+            <div class="imagen-container">
+              <img src="./imagenes/wtf.jpeg" alt="cara de dos chicos con zoom" />
+            </div>
+          </div>
+        </div>
+  
+        <div id="carpeta2" class="carpeta">
+          <h3>Carpeta 2</h3>
+          <div class="imagenes">
+            <div class="imagen-container">
+              <img src="./imagenes/pirata.jpeg" alt="dos chicos haciendo caras" />
+            </div>
+            <div class="imagen-container">
+              <img src="./imagenes/piperos.jpg" alt="dos chicos posando" />
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  
+      <script>
+        function toggleCarpeta(carpetaId) {
+          const carpetas = document.querySelectorAll(".carpeta");
+          carpetas.forEach((carpeta) => {
+            if (carpeta.id === carpetaId) {
+              carpeta.classList.toggle("visible");
+            } else {
+              carpeta.classList.remove("visible");
+            }
+          });
+        }
+      </script>
+  
+
+        <div id="suscribirsecontenedor">
+          <div id="suscribirsetexto">
+            <h2>Suscribirse</h2>
+            <form action="tu_script.php" method="post">
+              <input
+                type="email"
+                placeholder="Tu email"
+                required
+                aria-label="Email"
+              />
+              <input
+                type="password"
+                placeholder="Tu contraseña"
+                required
+                aria-label="Contraseña"
+              />
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+              <span class="label-text">Recibir noticias</span>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="videoscontenedor">
+          <div id="videostexto">
+            <h2>Videos</h2>
+            <div class="video-container">
+              <iframe
+                src="./videos/fueamor.mp4"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-container">
+              <iframe
+                src="./videos/teparatres.mp4"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div id="storecontenedor">
+          <div id="storetexto">
+            <h2>Store</h2>
+            <div class="store-item">
+              <img src="./imagenes/taza.png" alt="taza blanca" />
+              <p>Taza</p>
+            </div>
+            <div class="store-item">
+              <img src="./imagenes/remeblan.png" alt="remera blanca" />
+              <p>Remera blanca</p>
+            </div>
+            <div class="store-item">
+              <img src="./imagenes/remeneg.png" alt="remera negra" />
+              <p>Remera negra</p>
+
+              <a href="https://disershop.com.uy/">
+                
+                <button type="button">Comprar</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Formulario">
+        <h1>Formulario</h1>
+        <form action="#" method="post">
+          <label for="rango">¿Qué tanto te gustan los chicles de menta?</label>
+          <div class="rango-container">
+            <input type="range" id="rango" name="rango" min="0" max="10" step="1" />
+            <output id="rango-valor" for="rango"></output>
+          </div>
+          <div class="rango-texto">
+            <span>Muy poco</span>
+            <span>Mucho</span>
+          </div>
+          
+          <div class="textoform">
+          <label for="texto">Texto:</label>
+          <input type="text" id="texto" name="texto" placeholder="Escribe aquí" />
+            </div>
+          
+          <div class="telefonoform">  
+          <label for="telefono">Teléfono (Uruguay):</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="+598 XXXX XXXX"
+            pattern="^\+598\d{8}$"
+            title="El número debe comenzar con +598 seguido de 8 dígitos."
+          />
+           </div>
+         
+
+           <div class="emailform">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="correo@ejemplo.com"
+          />
+            </div>
+         
+          <div class="color-picker">
+            <label for="color">Selecciona tu color favorito:</label>
+            <input
+              type="color"
+              id="color"
+              name="color"
+              value="#000000"
+              oninput="this.nextElementSibling.value = this.value"
+            />
+            <output id="color-output" for="color">#000000</output>
+          </div>
+  
+          
+          <div class="numfavform">
+          <label for="numero">Número favorito del 1 al 10:</label>
+          <input type="number" id="numero" name="numero" min="1" max="10" />
+          </div>
+         
+
+          <div class="archivoform">
+          <label for="archivo">Sube un archivo:</label>
+          <input type="file" id="archivo" name="archivo" />
+          </div>
+          
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" name="opcion1" value="1" />
+              Opción 1
+            </label>
+            <label>
+              <input type="checkbox" name="opcion2" value="2" />
+              Opción 2
+            </label>
+            <label>
+              <input type="checkbox" name="opcion3" value="3" />
+              Opción 3
+            </label>
+          </div>
+  
+          
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="genero" value="masculino" />
+              Masculino
+            </label>
+            <label>
+              <input type="radio" name="genero" value="femenino" />
+              Femenino
+            </label>
+            <label>
+              <input type="radio" name="genero" value="prefiero_no_decirlo" />
+              Prefiero no decirlo
+            </label>
+          </div>
+            <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
